@@ -1,14 +1,12 @@
 // Contacto.js
 import { Container} from "react-bootstrap";
-
 import { FaMapMarker, FaPhoneAlt, FaEnvelope} from "react-icons/fa";
-import "../styles/Contacto.css"; 
 
 function Contacto() {
 
   return (
     <div>
-    <Container id="contacto">
+    <Container>
   
           <div>
             <h2>Contacto</h2>
