@@ -3,9 +3,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import '../styles/MenuSection.css'; // Asegúrate de importar tu archivo CSS
 
-const MenuSection = ({ title, items}) => {
+// Definición de la interfaz para cada ítem del menú
+interface MenuItem {
+  name: string;
+  price: string;
+}
+
+// Definición de las props del componente MenuSection
+interface MenuSectionProps {
+  title: string;
+  items: MenuItem[]; // items es un arreglo de objetos MenuItem
+}
+
+const MenuSection: React.FC<MenuSectionProps> = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Función para alternar la visibilidad de la sección
   const toggleSection = () => {
     setIsOpen(!isOpen);
   };
@@ -18,7 +31,7 @@ const MenuSection = ({ title, items}) => {
       </button>
       <AnimatePresence initial={false}>
         {isOpen && (
-          <motion.ul 
+          <motion.ul
             className="section-content"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
