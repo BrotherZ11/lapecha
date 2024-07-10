@@ -2,17 +2,18 @@
 import "./App.css";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Menu from "./components/Menu";
 import Contacto from "./components/Contacto";
-
-
+import Menu from "./components/Menu";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <><NavBar />
-    <Menu />
+    <>
+    <NavBar />
+    <Menu/>
     <Contacto />
-    <Footer /></>
+    <Footer />
+    </>
       
   );
 }

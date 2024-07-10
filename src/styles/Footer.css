@@ -1,7 +1,6 @@
 /* Estilos para el Footer */
 .footer {
-  background-color: #c5a47e;
-  color: #ffffff;
+  background: linear-gradient(#f8f3e3, #c2ad89);
   padding: 20px 0;
   margin-top: 40px;
 }

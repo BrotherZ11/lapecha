@@ -1,5 +1,4 @@
 // Footer.js
-import { Container } from "react-bootstrap";
 import { FaInstagram } from "react-icons/fa";
 import "../styles/Footer.css";
 
@@ -11,14 +10,14 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <Container className="text-center">
+      <div className="text-center">
         <FaInstagram
           size={30}
           className="instagram-icon"
           onClick={handleInstagramClick}
         />
         <p>&copy; 2024 Bar La Pechá</p>
-      </Container>
+      </div>
     </footer>
   );
 }

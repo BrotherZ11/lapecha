@@ -1,10 +1,26 @@
 /* Estilos para el Navbar */
 .navbar {
-  background-color: #c5a47e; /* Color beige claro */
-  border-bottom: 1px solid #e0d6c3; /* Añade un borde inferior */
+  background: linear-gradient(#c2ad89, #f8f3e3);
+  border-bottom: 1px solid #f8f3e3; /* Añade un borde inferior */
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-  color: #4b3e3e;
+  color: #1e1e1e; /* Color negro */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff; /* Color blanco en hover */
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand svg {
+  margin-right: 8px;
+}
+
+.nav-link svg {
+  margin-right: 4px;
 }

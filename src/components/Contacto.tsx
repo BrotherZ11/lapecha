@@ -1,12 +1,11 @@
 // Contacto.js
-import { Container} from "react-bootstrap";
 import { FaMapMarker, FaPhoneAlt, FaEnvelope} from "react-icons/fa";
 
 function Contacto() {
 
   return (
     <div>
-    <Container>
+    <div className="container">
   
           <div>
             <h2>Contacto</h2>
@@ -30,7 +29,7 @@ function Contacto() {
             </p>
           </div>
     
-    </Container>
+    </div>
     <hr className="divider" /> {/* Línea divisoria después de Menú */}
     </div>
     

@@ -1,6 +1,5 @@
 // Menu.js
 import {lazy, Suspense} from 'react';
-import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import '../styles/Menu.css';
 
@@ -111,7 +110,7 @@ function Menu() {
       transition={{ duration: 1 }}
     >
       <div className="menu-overlay">
-        <Container>
+        <div className='container'>
           <div className="menu-content">
             <h2>Menú</h2>
             <Suspense fallback={<div>Loading...</div>}>
@@ -124,7 +123,7 @@ function Menu() {
               ))}
             </Suspense>
           </div>
-        </Container>
+        </div>
         <hr className="divider" /> {/* Línea divisoria después de Menú */}
       </div>
       
